@@ -1,0 +1,76 @@
+<table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">id</th>
+                        <th scope="col">nama</th>
+                        <th scope="col">tgl buat</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      @forelse ($kuisioner as $kuisioner)
+                        <tr>
+                            <td>{{ $kuisioner->nama }} </td>
+                            <td>{{ $kuisioner->nama }}</td>
+                            <td>{{ $kuisioner->created_at }}</td>
+                        </tr>
+                    </tbody>
+                  </table> 
+                            
+                    <div class="form-group">
+                        <label class="font-weight-bold">No. HP</label>
+                        <input type="text" class="form-control" name="no_hp" id="no_hp">
+                    </div>
+                    
+                    <fieldset class="form-group">
+                        <legend class="col-form-label font-weight-bold">Jenis Pelayanan</legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                <input class="form-check-input" type="radio" name="jenis_pelayanan" id="1" value="option1">
+                                <label class="form-check-label" for="1">
+                                    Pengambilan akta cerai
+                                </label>
+                                </div>
+                                <div class="form-check">
+                                <input class="form-check-input" type="radio" name="jenis_pelayanan" id="2" value="option2">
+                                <label class="form-check-label" for="2">
+                                    Pengambilan salinan putusan/penetapan
+                                </label>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    
+
+                    
+                    <div class="column">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">U1</th>
+                                <th scope="col">U2</th>
+                                <th scope="col">U3</th>
+                                <th scope="col">U4</th>
+                                <th scope="col">U5</th>
+                                <th scope="col">U6</th>
+                                <th scope="col">U7</th>
+                                <th scope="col">U8</th>
+                                <th scope="col">U9</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>4</td>
+                                    <td>4</td>
+                                    <td>4</td>
+                                    <td>4</td>
+                                    <td>4</td>
+                                    <td>4</td>
+                                    <td>4</td>
+                                    <td>4</td>
+                                    <td>4</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
